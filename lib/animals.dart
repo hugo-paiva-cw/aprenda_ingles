@@ -1,22 +1,24 @@
 import 'package:flutter/material.dart';
 
-class Bichos extends StatefulWidget {
-  const Bichos({Key? key}) : super(key: key);
+class Animals extends StatefulWidget {
+  const Animals({Key? key}) : super(key: key);
 
   @override
-  State<Bichos> createState() => _BichosState();
+  State<Animals> createState() => _AnimalsState();
 }
 
-class _BichosState extends State<Bichos> {
+class _AnimalsState extends State<Animals> {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-        crossAxisCount: 2,
+      crossAxisCount: 2,
       childAspectRatio: MediaQuery.of(context).size.aspectRatio * 2,
       // scrollDirection: Axis.horizontal,
       children: [
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+
+          },
           child: Image.asset('assets/images/cao.png'),
         ),
         GestureDetector(

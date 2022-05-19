@@ -1,4 +1,5 @@
-import 'package:aprenda_ingles/bichos.dart';
+import 'package:aprenda_ingles/animals.dart';
+import 'package:aprenda_ingles/numbers.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -54,8 +55,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
         child: TabBarView(
             controller: _tabController,
             children: const [
-              Bichos(),
-              Center(child: Text('Segunda')),
+              Animals(),
+              Numbers(),
               Center(child: Text('Terceira')),
             ]
         ),
